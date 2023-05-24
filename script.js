@@ -1,19 +1,22 @@
 //Set up initial variables
-const computerChoice = getComputerChoice
 //Create Function for computer choice
 function getComputerChoice() {
-    const randomNumber = Math.floor(Math.random() * 3);
-    switch (randomNumber) {
+    var randomNum = Math.floor(Math.random() * 3) + 1;
+    switch (randomNum) {
         case 1:
             return 'paper';
         case 2:
             return 'rock';
-        case 3: 
+        case 3:
             return 'scissors';
     }
 }
+
+
 //function to decide winner
 //main game function
 
 
-console.log("Hello World");
+
+// Test the function
+console.log(getComputerChoice());
